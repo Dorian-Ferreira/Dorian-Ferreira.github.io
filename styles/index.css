@@ -36,3 +36,7 @@ h3 {
 	color: var(--color-orange) !important;
 	font-size: 1.5em !important;
 }
+
+ul li {
+	color: var(--color-white) !important;
+}
