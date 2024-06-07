@@ -25,12 +25,18 @@
 	</project>
 	<project>
 		<title>Cap Entreprise</title>
-		<context>Réalisé en POEC Développeur Java</context>
+		<context>Réalisé en Formation POEC Développeur Java</context>
 		<description>Projet réalisé en solo, d'une durée de 2 semaines.
 		Découverte de Java Spring Boot et des JSP.
 		Application Web d'inventaire de jeu vidéo.
 		Les utilisateurs peuvent déposer des avis sur les jeux.</description>
 		<git>https://github.com/Dorian-Ferreira/poec_hb_cap_entreprise</git>
+	</project>
+	<project>
+		<title>Portfolio</title>
+		<context>Réalisé en Formation CDA</context>
+		<description>Projet réalisé en solo sur quelques jours pour le module Web Statique.
+		Réalisation de ce portfolio en HTML/CSS/JS avec Bootstrap et XML pour le stockage des informations des projets.</description>
 	</project>
 	<project>
 		<title>Découverte Angular</title>
