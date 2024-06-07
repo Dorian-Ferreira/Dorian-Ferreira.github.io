@@ -4,7 +4,8 @@
 		<meta charset="utf-8" />
 		<title>Portfolio - Dorian Ferreira</title>
 		<link rel="stylesheet" href="styles/style.css" />
-		<link rel="stylesheet" href="styles/project.css" />
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="stylesheet" href="styles/page.css" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 			rel="stylesheet"
@@ -20,28 +21,59 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
-		<script src="script.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header class="sticky-top">
 			<ul>
-				<li><a href="index.html">Accueil</a></li>
+				<li><a href="/">Accueil</a></li>
 				<li><a href="apropos.html">A Propos</a></li>
 				<li><a href="project.html">Réalisations</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</header>
 		<main class="container-fluid">
-			<section class="row" id="title">
-				<h1>Dorian Ferreira - Portfolio - Réalisations</h1>
+			<section class="row">
+				<h1>Dorian Ferreira - Portfolio - Contact</h1>
 			</section>
 			<section class="row">
-				<h2>Réalisations</h2>
-				<p class="mt-3" id="desc">
-					Voici différents projets que j'ai réalisés dans mes cursus d'études ou
-					de formations mais également en projets personnels.
-				</p>
-				<div id="list"></div>
+				<h2>Contact</h2>
+				<form action="action" method="post">
+					<div class="form">
+						<label>Nom</label>
+						<input
+							type="text"
+							placeholder="Dorian Ferreira"
+							name="name"
+							required
+						/>
+					</div>
+					<div class="form">
+						<label>Email</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="dorian.ferreira42@gmail.com"
+							name="email"
+							required
+						/>
+					</div>
+					<div class="form">
+						<label>Objet</label>
+						<input type="text" placeholder="Demande" name="subject" required />
+					</div>
+					<div class="form">
+						<label>Contenu</label>
+						<textarea name="content" required></textarea>
+					</div>
+					<div class="form">
+						<input
+							id="submit"
+							type="submit"
+							value="Valider"
+							class="btn btn-primary"
+						/>
+					</div>
+				</form>
 			</section>
 		</main>
 		<footer>

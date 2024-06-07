@@ -29,13 +29,3 @@ p a {
 p a:hover {
 	color: var(--color-white) !important;
 }
-
-body {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-main {
-	flex: 1;
-}
