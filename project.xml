@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE projects
+[
+	<!ELEMENT projects (project*)>
+		<!ELEMENT project (title, context, description, demo?, git?, link?)>
+			<!ELEMENT title (#PCDATA)>
+			<!ELEMENT context (#PCDATA)>
+			<!ELEMENT description (#PCDATA)>
+			<!ELEMENT demo (#PCDATA)>
+			<!ELEMENT git (#PCDATA)>
+			<!ELEMENT link (#PCDATA)>
+]>
+
+<projects>
+	<project>
+		<title>T.A.G.I</title>
+		<context>Réalisé en deuxième année de DUT</context>
+		<description>Projet réalisé en groupe de 5, d'une durée de 6 mois.
+		Prototype de jeu vidéo d'action et d'infltration en 2D.
+		Conception de l'architecture logiciel et du Game Design.
+		Gestion de projet Agile, version allégée de SCRUM.
+		Réalisation en C# en utilisant le moteur de jeu Unity.</description>
+		<demo>https://www.youtube.com/watch?v=uf1tcX8aGiY</demo>
+	</project>
+	<project>
+		<title>Réalité Augmenté</title>
+		<context>Réalisé en deuxième année de DUT</context>
+		<description>Projet réalisé en binome, d'une durée de 4 semaines.
+		Prototype de jeu vidéo de puzzle et de logique.
+		Conception de l'architecture logiciel et du Game Design.
+		Réalisation en C# en utilisant le moteur de jeu Unity.
+		Intéraction en utilisant les mains grâce à un détécteur Leap Motion.</description>
+		<demo>https://www.youtube.com/watch?v=ioToF_5T0kU</demo>
+	</project>
+	<project>
+		<title>Cap Entreprise</title>
+		<context>Réalisé en POEC Développeur Java</context>
+		<description>Projet réalisé en solo, d'une durée de 2 semaines.
+		Découverte de Java Spring Boot et des JSP.
+		Application Web d'inventaire de jeu vidéo.
+		Les utilisateurs peuvent déposer des avis sur les jeux.</description>
+		<git>https://github.com/Dorian-Ferreira/poec_hb_cap_entreprise</git>
+	</project>
+	<project>
+		<title>Découverte Angular</title>
+		<context>Projet Personnel</context>
+		<description>Projet réalisé en solo sur quelques jours.
+		Découverte d'Angular 17.
+		Application Web d'inventaire des Champions de League of Legends.
+		Possibilité de voir les détails d'un Champion tels que ses Skins ou Sorts.
+		Utilisation de l'API Officiel de Riot Games.</description>
+		<git>https://github.com/Dorian-Ferreira/league_api</git>
+		<link>https://dorian-ferreira.github.io/league_api/</link>
+	</project>
+</projects>

@@ -1,0 +1,92 @@
+@font-face {
+	font-family: retroFont;
+	src: url("/font/Retro Gaming.ttf");
+}
+
+:root {
+	--color-bg-orange: rgba(192, 86, 0, 1);
+	--color-orange: #f06c00;
+	--color-red: #ff2121;
+	--color-black: #111111;
+	--color-dark: #303030;
+	--color-white: #c9c9c9;
+}
+
+* {
+	font-family: retroFont;
+}
+
+body {
+	background-color: var(--color-dark) !important;
+}
+
+header {
+	display: flex;
+	background-color: var(--color-bg-orange);
+	justify-content: end;
+	padding-top: 20px;
+	padding-right: 20px;
+	border-bottom: 1px solid var(--color-black);
+}
+
+footer {
+	display: flex;
+	background-color: var(--color-bg-orange);
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+header ul,
+footer ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	list-style: none;
+}
+
+footer ul {
+	width: 100%;
+}
+
+li {
+	color: var(--color-black) !important;
+}
+
+a {
+	text-decoration: none !important;
+	color: var(--color-black) !important;
+}
+
+a:hover {
+	color: var(--color-white) !important;
+}
+
+h1 {
+	color: var(--color-red) !important;
+	font-size: 3em !important;
+}
+
+h2 {
+	color: var(--color-orange) !important;
+	padding-top: 1em;
+}
+
+p {
+	color: var(--color-white) !important;
+}
+
+@media (width <= 600px) {
+	header {
+		justify-content: center;
+	}
+
+	header li {
+		float: left;
+		width: 45%;
+	}
+
+	h1 {
+		font-size: 2em !important;
+	}
+}

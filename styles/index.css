@@ -1,0 +1,38 @@
+label {
+	color: var(--color-white);
+	padding-right: 1em;
+	width: 6em;
+	vertical-align: top;
+}
+
+.form {
+	padding-top: 1em;
+}
+
+input:not(#submit),
+textarea {
+	width: 66%;
+}
+
+textarea {
+	height: 10em;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 1em 0em 5em 0em;
+	margin: 0 15% !important;
+}
+
+section:not(:last-child) {
+	border-bottom: 1px solid var(--color-white);
+}
+
+h3 {
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	color: var(--color-orange) !important;
+	font-size: 1.5em !important;
+}
