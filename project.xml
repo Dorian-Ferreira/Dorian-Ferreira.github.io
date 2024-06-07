@@ -14,24 +14,14 @@
 
 <projects>
 	<project>
-		<title>T.A.G.I</title>
-		<context>Réalisé en deuxième année de DUT</context>
-		<description>Projet réalisé en groupe de 5, d'une durée de 6 mois.
-		Prototype de jeu vidéo d'action et d'infltration en 2D.
-		Conception de l'architecture logiciel et du Game Design.
-		Gestion de projet Agile, version allégée de SCRUM.
-		Réalisation en C# en utilisant le moteur de jeu Unity.</description>
-		<demo>https://www.youtube.com/watch?v=uf1tcX8aGiY</demo>
-	</project>
-	<project>
-		<title>Réalité Augmenté</title>
-		<context>Réalisé en deuxième année de DUT</context>
-		<description>Projet réalisé en binome, d'une durée de 4 semaines.
-		Prototype de jeu vidéo de puzzle et de logique.
+		<title>Card Game</title>
+		<context>Projet Personnel</context>
+		<description>Projet réalisé en solo sur plusieurs mois.
+		Prototype de jeu vidéo du genre 'deckbuilding rogue-like' pour Android et PC.
 		Conception de l'architecture logiciel et du Game Design.
 		Réalisation en C# en utilisant le moteur de jeu Unity.
-		Intéraction en utilisant les mains grâce à un détécteur Leap Motion.</description>
-		<demo>https://www.youtube.com/watch?v=ioToF_5T0kU</demo>
+		</description>
+		<link>https://github.com/Dorian-Ferreira/card_game_prototype</link>
 	</project>
 	<project>
 		<title>Cap Entreprise</title>
@@ -52,5 +42,25 @@
 		Utilisation de l'API Officiel de Riot Games.</description>
 		<git>https://github.com/Dorian-Ferreira/league_api</git>
 		<link>https://dorian-ferreira.github.io/league_api/</link>
+	</project>
+	<project>
+		<title>T.A.G.I</title>
+		<context>Réalisé en deuxième année de DUT</context>
+		<description>Projet réalisé en groupe de 5, d'une durée de 6 mois.
+		Prototype de jeu vidéo d'action et d'infltration en 2D.
+		Conception de l'architecture logiciel et du Game Design.
+		Gestion de projet Agile, version allégée de SCRUM.
+		Réalisation en C# en utilisant le moteur de jeu Unity.</description>
+		<demo>https://www.youtube.com/watch?v=uf1tcX8aGiY</demo>
+	</project>
+	<project>
+		<title>Réalité Augmenté</title>
+		<context>Réalisé en deuxième année de DUT</context>
+		<description>Projet réalisé en binome, d'une durée de 4 semaines.
+		Prototype de jeu vidéo de puzzle et de logique.
+		Conception de l'architecture logiciel et du Game Design.
+		Réalisation en C# en utilisant le moteur de jeu Unity.
+		Intéraction en utilisant les mains grâce à un détécteur Leap Motion.</description>
+		<demo>https://www.youtube.com/watch?v=ioToF_5T0kU</demo>
 	</project>
 </projects>

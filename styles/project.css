@@ -15,7 +15,8 @@ section:not(:last-child) {
 
 @media (width <= 770px) {
 	.row {
-		max-width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 }
 
@@ -23,7 +24,8 @@ section:not(:last-child) {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	margin: 0 15%;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 
 h3 {
@@ -46,4 +48,8 @@ h4 {
 	font-size: 1em !important;
 	color: var(--color-white) !important;
 	padding-bottom: 1em;
+}
+
+.card a {
+	text-decoration: underline !important;
 }

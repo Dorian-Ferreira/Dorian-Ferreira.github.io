@@ -36,7 +36,7 @@ function display(xml) {
 
 		try {
 			var demo = document.createElement("a");
-			demo.textContent = "Demonstration";
+			demo.innerHTML = "<i class='fa-brands fa-youtube fa-2x'></i>";
 			demo.href = project.querySelector("demo").textContent;
 			element.appendChild(demo);
 		} catch {}
