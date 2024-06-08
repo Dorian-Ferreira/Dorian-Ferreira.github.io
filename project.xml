@@ -37,6 +37,7 @@
 		<context>Réalisé en Formation CDA</context>
 		<description>Projet réalisé en solo sur quelques jours pour le module Web Statique.
 		Réalisation de ce portfolio en HTML/CSS/JS avec Bootstrap et XML pour le stockage des informations des projets.</description>
+		<git>https://github.com/Dorian-Ferreira/Dorian-Ferreira.github.io</git>
 	</project>
 	<project>
 		<title>Découverte Angular</title>
