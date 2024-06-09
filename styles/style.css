@@ -117,3 +117,11 @@ main {
 section:not(:last-child) {
 	border-bottom: 2px solid var(--color-white);
 }
+
+h2 a {
+	color: var(--color-white) !important;
+}
+
+h2 a:hover {
+	color: var(--color-orange) !important;
+}
