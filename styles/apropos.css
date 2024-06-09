@@ -5,6 +5,10 @@ h3 {
 	font-size: 1.5em !important;
 }
 
-#loisirs li {
+article li {
 	color: var(--color-white) !important;
+}
+
+article ul {
+	padding-left: 0px;
 }
