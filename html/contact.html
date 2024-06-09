@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Portfolio - Dorian Ferreira</title>
-		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="../styles/contact.css" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 			rel="stylesheet"
@@ -24,16 +25,54 @@
 		<header class="sticky-top">
 			<ul>
 				<li><a href="/">Accueil</a></li>
-				<li><a href="html/apropos.html">A Propos</a></li>
-				<li><a href="html/project.html">Réalisations</a></li>
-				<li><a href="html/contact.html">Contact</a></li>
+				<li><a href="apropos.html">A Propos</a></li>
+				<li><a href="project.html">Réalisations</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</header>
 		<main class="container-fluid">
 			<section class="row">
-				<h1>Dorian Ferreira - Portfolio</h1>
-				<h2>Développeur Concepteur d'Applications</h2>
-				<h2>24 ans - Clermont-Ferrand</h2>
+				<h1>Dorian Ferreira - Portfolio - Contact</h1>
+			</section>
+			<section class="row">
+				<h2>Contact</h2>
+				<form action="action" method="post">
+					<div class="form">
+						<label>Nom</label>
+						<input
+							type="text"
+							placeholder="Dorian Ferreira"
+							name="name"
+							required
+						/>
+					</div>
+					<div class="form">
+						<label>Email</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="dorian.ferreira42@gmail.com"
+							name="email"
+							required
+						/>
+					</div>
+					<div class="form">
+						<label>Objet</label>
+						<input type="text" placeholder="Demande" name="subject" required />
+					</div>
+					<div class="form">
+						<label>Contenu</label>
+						<textarea name="content" required></textarea>
+					</div>
+					<div class="form">
+						<input
+							id="submit"
+							type="submit"
+							value="Valider"
+							class="btn btn-primary"
+						/>
+					</div>
+				</form>
 			</section>
 		</main>
 		<footer>

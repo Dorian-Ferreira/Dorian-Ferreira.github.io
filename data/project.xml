@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE projects
+[
+	<!ELEMENT projects (project*)>
+		<!ELEMENT project (title, context, description, links?)>
+			<!ELEMENT title (#PCDATA)>
+			<!ELEMENT context (#PCDATA)>
+			<!ELEMENT description (#PCDATA)>
+			<!ELEMENT links (demo?, git?, link?)>
+				<!ELEMENT demo (#PCDATA)>
+				<!ELEMENT git (#PCDATA)>
+				<!ELEMENT link (#PCDATA)>
+]>
+
+<projects>
+	<project>
+		<title>Card Game</title>
+		<context>Projet Personnel</context>
+		<description>Projet réalisé en solo sur plusieurs mois.
+		Prototype de jeu vidéo du genre 'deckbuilding rogue-like' pour Android et PC.
+		Conception de l'architecture logiciel et du Game Design.
+		Réalisation en C# en utilisant le moteur de jeu Unity.
+		</description>
+		<links>
+			<link>https://github.com/Dorian-Ferreira/card_game_prototype</link>
+		</links>
+	</project>
+	<project>
+		<title>Cap Entreprise</title>
+		<context>Formation POEC Développeur Java</context>
+		<description>Projet réalisé en solo, d'une durée de 2 semaines.
+		Découverte de Java Spring Boot et des JSP.
+		Application Web d'inventaire de jeu vidéo.
+		Les utilisateurs peuvent déposer des avis sur les jeux.</description>
+		<links>
+			<git>https://github.com/Dorian-Ferreira/poec_hb_cap_entreprise</git>
+		</links>
+	</project>
+	<project>
+		<title>Portfolio</title>
+		<context>Formation CDA</context>
+		<description>Projet réalisé en solo pour le module Web Statique.
+		Réalisation de ce portfolio en HTML/CSS/JS avec Bootstrap et XML pour le stockage des informations des projets.
+		La police utilisé est Retro	Gaming par Daymarius et est libre de droit.</description>
+		<links>
+			<git>https://github.com/Dorian-Ferreira/Dorian-Ferreira.github.io</git>
+		</links>
+	</project>
+	<project>
+		<title>Découverte Angular</title>
+		<context>Projet Personnel</context>
+		<description>Projet réalisé en solo pour découvrir Angular 17.
+		Application Web d'inventaire des Champions de League of Legends.
+		Possibilité de voir les détails d'un Champion tels que ses Skins ou Sorts.
+		Utilisation de l'API Officiel de Riot Games.</description>
+		<links>
+			<git>https://github.com/Dorian-Ferreira/league_api</git>
+			<link>https://dorian-ferreira.github.io/league_api/</link>
+		</links>
+	</project>
+	<project>
+		<title>T.A.G.I</title>
+		<context>Deuxième année de DUT</context>
+		<description>Projet réalisé en groupe de 5, d'une durée de 6 mois.
+		Prototype de jeu vidéo d'action et d'infltration en 2D.
+		Conception de l'architecture logiciel et du Game Design.
+		Gestion de projet Agile, version allégée de SCRUM.
+		Réalisation en C# en utilisant le moteur de jeu Unity.</description>
+		<links>
+			<demo>https://www.youtube.com/watch?v=uf1tcX8aGiY</demo>
+		</links>
+	</project>
+	<project>
+		<title>Réalité Augmenté</title>
+		<context>Deuxième année de DUT</context>
+		<description>Projet réalisé en binome, d'une durée de 4 semaines.
+		Prototype de jeu vidéo de puzzle et de logique.
+		Conception de l'architecture logiciel et du Game Design.
+		Réalisation en C# en utilisant le moteur de jeu Unity.
+		Intéraction en utilisant les mains grâce à un détécteur Leap Motion.</description>
+		<links>
+			<demo>https://www.youtube.com/watch?v=ioToF_5T0kU</demo>
+		</links>
+	</project>
+</projects>

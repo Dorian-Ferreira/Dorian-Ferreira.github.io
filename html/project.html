@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Portfolio - Dorian Ferreira</title>
-		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="../styles/project.css" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 			rel="stylesheet"
@@ -19,21 +20,28 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script src="../scripts/script.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header class="sticky-top">
 			<ul>
 				<li><a href="/">Accueil</a></li>
-				<li><a href="html/apropos.html">A Propos</a></li>
-				<li><a href="html/project.html">Réalisations</a></li>
-				<li><a href="html/contact.html">Contact</a></li>
+				<li><a href="apropos.html">A Propos</a></li>
+				<li><a href="project.html">Réalisations</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</header>
 		<main class="container-fluid">
 			<section class="row">
-				<h1>Dorian Ferreira - Portfolio</h1>
-				<h2>Développeur Concepteur d'Applications</h2>
-				<h2>24 ans - Clermont-Ferrand</h2>
+				<h1>Dorian Ferreira - Portfolio - Réalisations</h1>
+			</section>
+			<section class="row">
+				<h2>Réalisations</h2>
+				<p class="mt-3">
+					Voici différents projets que j'ai réalisés dans mes cursus d'études ou
+					de formations mais également en projets personnels.
+				</p>
+				<div id="list"></div>
 			</section>
 		</main>
 		<footer>
