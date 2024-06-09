@@ -35,24 +35,42 @@ function display(xml) {
 		element.appendChild(context);
 
 		try {
-			var demo = document.createElement("a");
-			demo.innerHTML = "<i class='fa-brands fa-youtube fa-2x'></i>";
-			demo.href = project.querySelector("demo").textContent;
-			element.appendChild(demo);
-		} catch {}
+			var listElem = document.createElement("ul");
 
-		try {
-			var git = document.createElement("a");
-			git.innerHTML = "<i class='fa-brands fa-github fa-2x'></i>";
-			git.href = project.querySelector("git").textContent;
-			element.appendChild(git);
-		} catch {}
+			try {
+				var demoLi = document.createElement("li");
 
-		try {
-			var link = document.createElement("a");
-			link.innerHTML = "Disponible ici";
-			link.href = project.querySelector("link").textContent;
-			element.appendChild(link);
+				var demo = document.createElement("a");
+				demo.innerHTML = "<i class='fa-brands fa-youtube fa-3x'></i>";
+				demo.href = project.querySelector("demo").textContent;
+
+				demoLi.appendChild(demo);
+				listElem.appendChild(demoLi);
+			} catch {}
+
+			try {
+				var gitLi = document.createElement("li");
+
+				var git = document.createElement("a");
+				git.innerHTML = "<i class='fa-brands fa-github fa-3x'></i>";
+				git.href = project.querySelector("git").textContent;
+
+				gitLi.appendChild(git);
+				listElem.appendChild(gitLi);
+			} catch {}
+
+			try {
+				var linkLi = document.createElement("li");
+
+				var link = document.createElement("a");
+				link.innerHTML = "Disponible ici";
+				link.href = project.querySelector("link").textContent;
+
+				linkLi.appendChild(link);
+				listElem.appendChild(linkLi);
+			} catch {}
+
+			element.appendChild(listElem);
 		} catch {}
 
 		element.appendChild(description);
