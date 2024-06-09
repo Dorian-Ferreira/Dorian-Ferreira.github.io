@@ -1,0 +1,10 @@
+h3 {
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	color: var(--color-orange) !important;
+	font-size: 1.5em !important;
+}
+
+#loisirs li {
+	color: var(--color-white) !important;
+}

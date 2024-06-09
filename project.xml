@@ -36,7 +36,8 @@
 		<title>Portfolio</title>
 		<context>Réalisé en Formation CDA</context>
 		<description>Projet réalisé en solo sur quelques jours pour le module Web Statique.
-		Réalisation de ce portfolio en HTML/CSS/JS avec Bootstrap et XML pour le stockage des informations des projets.</description>
+		Réalisation de ce portfolio en HTML/CSS/JS avec Bootstrap et XML pour le stockage des informations des projets.
+		La police utilisé est Retro	Gaming par Daymarius et est libre de droit.</description>
 		<git>https://github.com/Dorian-Ferreira/Dorian-Ferreira.github.io</git>
 	</project>
 	<project>

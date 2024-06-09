@@ -20,7 +20,7 @@ function display(xml) {
 
 	projects.forEach((project) => {
 		var element = document.createElement("div");
-		element.className = "card mx-5 my-3 col-md-4 col-lg-3 col-sm-auto";
+		element.className = "card mx-5 3 my-3 col-auto col-lg-3";
 
 		var titre = document.createElement("h3");
 		titre.textContent = project.querySelector("title").textContent;
