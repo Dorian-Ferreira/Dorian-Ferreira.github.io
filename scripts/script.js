@@ -19,7 +19,7 @@ function display(xml) {
 	const projects = xml.querySelectorAll("project");
 
 	projects.forEach((project) => {
-		var element = document.createElement("div");
+		var element = document.createElement("article");
 		element.className = "card mx-5 3 my-3 col-auto col-lg-3";
 
 		var titre = document.createElement("h3");
