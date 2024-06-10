@@ -10,7 +10,7 @@ async function loadXMLDoc(filename) {
 	}
 }
 
-// Fonction pour afficher les livres
+// Fonction pour afficher les projets
 function display(xml) {
 	const list = document.querySelector("#list");
 	list.className =
@@ -18,6 +18,8 @@ function display(xml) {
 
 	const projects = xml.querySelectorAll("project");
 
+	// Pour chaque projet dans le XML
+	// on créé une balise article avec dedans le titre, le contexte, la description et les liens si il y en a
 	projects.forEach((project) => {
 		var element = document.createElement("article");
 		element.className = "card mx-5 3 my-3 col-auto col-lg-3";
@@ -28,16 +30,15 @@ function display(xml) {
 		var context = document.createElement("h4");
 		context.textContent = project.querySelector("context").textContent;
 
-		var description = document.createElement("p");
-		description.textContent = project.querySelector("description").textContent;
-
 		element.appendChild(titre);
 		element.appendChild(context);
 
 		try {
+			// try catch pour rajouter les liens si il y en a dans le XML
 			var listElem = document.createElement("ul");
 
 			try {
+				// try catch pour rajouter le lien youtube du XML si il est présent dans le XML
 				var demoLi = document.createElement("li");
 
 				var demo = document.createElement("a");
@@ -49,6 +50,7 @@ function display(xml) {
 			} catch {}
 
 			try {
+				// try catch pour rajouter le lien git du XML si il est présent dans le XML
 				var gitLi = document.createElement("li");
 
 				var git = document.createElement("a");
@@ -60,6 +62,7 @@ function display(xml) {
 			} catch {}
 
 			try {
+				// try catch pour rajouter le lien du XML si il est présent dans le XML
 				var linkLi = document.createElement("li");
 
 				var link = document.createElement("a");
@@ -73,13 +76,17 @@ function display(xml) {
 			element.appendChild(listElem);
 		} catch {}
 
+		var description = document.createElement("p");
+		description.textContent =
+			project.querySelector("description").textContent;
+
 		element.appendChild(description);
 
 		list.append(element);
 	});
 }
 
-// Charger et afficher les livres au chargement de la page
+// Charger et afficher les projets au chargement de la page
 window.onload = function () {
 	loadXMLDoc("../data/project.xml")
 		.then(display)
