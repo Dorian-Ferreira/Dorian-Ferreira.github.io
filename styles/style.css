@@ -1,134 +1,211 @@
 @font-face {
-	font-family: retroFont;
-	src: url("/font/Retro Gaming.ttf");
+    font-family: retroFont;
+    src: url('/font/Retro Gaming.ttf');
 }
 
 :root {
-	--color-bg-orange: #c05600;
-	--color-orange: #f06c00;
-	--color-red: #ff2121;
-	--color-black: #111111;
-	--color-dark: #303030;
-	--color-white: #c9c9c9;
+    --color-bg-orange: #c05600;
+    --color-orange: #f06c00;
+    --color-red: #ff2121;
+    --color-black: #111111;
+    --color-dark: #303030;
+    --color-white: #c9c9c9;
 }
 
 * {
-	font-family: retroFont;
+    font-family: retroFont;
 }
 
 body {
-	background-color: var(--color-dark) !important;
+    background-color: var(--color-dark) !important;
 
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-	display: flex;
-	background-color: var(--color-bg-orange);
-	justify-content: end;
-	padding-top: 20px;
-	padding-right: 20px;
-	border-bottom: 1px solid var(--color-black);
+    display: flex;
+    background-color: var(--color-bg-orange);
+    justify-content: end;
+    padding-top: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid var(--color-black);
 }
 
 footer {
-	display: flex;
-	background-color: var(--color-bg-orange);
-	padding-top: 20px;
-	padding-right: 20px;
+    display: flex;
+    background-color: var(--color-bg-orange);
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 header ul,
 footer ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
 }
 
 footer ul {
-	width: 100%;
+    width: 100%;
 }
 
 section {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	padding: 1em 0em 5em 0em;
-	margin: 0 15% !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 0em 5em 0em;
+    margin: 0 15% !important;
 }
 
 main {
-	flex: 1;
+    flex: 1;
 }
 
 section:not(:last-child) {
-	border-bottom: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
 }
 
 li {
-	color: var(--color-black) !important;
+    color: var(--color-black) !important;
 }
 
 h1 {
-	color: var(--color-red) !important;
-	font-size: 3em !important;
+    color: var(--color-red) !important;
+    font-size: 3em !important;
 }
 
 h2 {
-	color: var(--color-orange) !important;
-	padding-top: 1em;
+    color: var(--color-orange) !important;
+    padding-top: 1em;
 }
 
 p {
-	color: var(--color-white) !important;
+    color: var(--color-white) !important;
 }
 
 /* media queries */
 
 @media (width <= 600px) {
-	header {
-		justify-content: center;
-	}
+    header {
+        justify-content: center;
+    }
 
-	header li {
-		float: left;
-		width: 45%;
-	}
+    header li {
+        float: left;
+        width: 45%;
+    }
 
-	h1 {
-		font-size: 2em !important;
-	}
+    h1 {
+        font-size: 2em !important;
+    }
 
-	section {
-		margin: 0 5% !important;
-	}
+    section {
+        margin: 0 5% !important;
+    }
 }
 
 /* a */
 
 header a {
-	text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 a {
-	color: var(--color-black) !important;
+    color: var(--color-black) !important;
 }
 
 a:hover {
-	color: var(--color-white) !important;
+    color: var(--color-white) !important;
 }
 
 h2 a {
-	color: var(--color-white) !important;
+    color: var(--color-white) !important;
 }
 
 h2 a:hover {
-	color: var(--color-orange) !important;
+    color: var(--color-orange) !important;
+}
+
+/* A propos */
+
+.aPropos h3 {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: var(--color-orange) !important;
+    font-size: 1.5em !important;
+}
+
+article li {
+    color: var(--color-white) !important;
+}
+
+article ul {
+    padding-left: 0px;
+}
+
+/* Projects */
+
+.project {
+    margin: 0 5% !important;
+}
+
+@media (width <= 1350px) {
+    .card {
+        width: 33% !important;
+    }
+}
+
+@media (width <= 1100px) {
+    .card {
+        width: 80% !important;
+    }
+}
+
+.project h3 {
+    padding-top: 0.5em;
+    color: var(--color-black) !important;
+    font-size: 2em !important;
+}
+
+h4 {
+    color: var(--color-black) !important;
+    font-size: 1em !important;
+}
+
+.card {
+    background-color: var(--color-bg-orange) !important;
+}
+
+.card p {
+    margin-top: 1em;
+    font-size: 1em !important;
+    color: var(--color-white) !important;
+    padding-bottom: 1em;
+}
+
+.card a {
+    text-decoration: underline !important;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+    margin-top: 1em;
+    padding: 0;
+}
+
+.card li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
